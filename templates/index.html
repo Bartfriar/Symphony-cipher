@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Symphony Cipher - Music Cipher Software</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="static/fontawesome/css/all.min.css" type="text/css" /> 
+    <link rel="stylesheet" href="static/css/slick.css" type="text/css" />   
+    <link rel="stylesheet" href="static/css/tooplate-simply-amazed.css" type="text/css" />
+
+</head>
+
+<body>
+    <div id="outer">
+        <header class="header order-last" id="tm-header">
+            <nav class="navbar">
+                <div class="collapse navbar-collapse single-page-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section-1"><span class="icn"><i class='fab fa-napster' style='font-size:30px'></i></span> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section-2"><span class="icn"><i class="fab fa-2x fa-battle-net"></i></span> Encode</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section-3"><span class="icn"><i class='fas fa-undo' style='font-size:30px'></i></span> Decode</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section-4"><span class="icn"><i class='fas fa-atom' style='font-size:30px'></i></span> About</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#section-4"><span class="icn"><i class="far fa-2x fa-comments"></i></span> Contact</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <button class="navbar-button collapsed" type="button">
+            <span class="menu_icon">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </span>
+        </button>
+        
+        <main id="content-box" class="order-first">
+            <div class="banner-section section parallax-window" data-parallax="scroll" data-image-src="static/img/music_sheet_01.jpg" id="section-1">
+                <div class="container">
+                    <div class="item">
+                        <div class="bg-green-transparent logo-fa"><span><i class='fab fa-napster' style='font-size:60px'></i></span> Symphony Cipher</div>
+                        <div class="bg-green-transparent simple"><p>A Musical Note Cipher Software. <br>Enjoy!!!!</p></div>
+                    </div>
+                </div>
+            </div>
+        
+            <section class="contact-section section" id="section-2">
+                <div class="container">
+                    
+                    <div class="item col-md-4">
+                        <div class="tm-work-item-inner">
+                            <div class="icn"><i class="fab fa-3x fa-battle-net"></i></div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <h3>Encode Message</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-10 contact-form">
+                            <div class="form tm-contact-item-inner">
+                                <form id="section2_form" autocomplete="off">
+                                    <input autocomplete="false" name="hidden" type="text" style="display:none;">
+                                    <div class="form-group">
+                                        <input name="input_data_2" id="input_data_2" type="text" class="form-control" placeholder="Message to be hidden" autocomplete="off">
+                                    </div>
+                                    <!-- <div class="form-group">
+                                        <input name="email" type="text" class="form-control" placeholder="Email">
+                                    </div> -->
+                                    <div class="form-group text-right">
+                                        <input type="submit" class="btn btn-primary" value="Encode">
+                                    </div>
+                                    <div class="form-group">
+                                        <p id="cipher" style="color: white; font-size: 30px; font-weight: bold; text-decoration: underline;"></p>
+                                        <textarea name="message" id="section2_output" class="textarea form-control" ></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>             
+                </div>
+            </section>
+
+            <section class="gallery-section section parallax-window" data-parallax="scroll" data-image-src="static/img/rope.jpg" id="section-3">
+                <div class="container">                    
+                    
+                    <div class="item col-md-4">
+                        <div class="tm-work-item-inner">
+                            <div class="icn"><i class='fas fa-undo' style='font-size:50px; color: white;'></i></div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <h3>Decode Cipher</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-10 contact-form">
+                            <div class="form tm-contact-item-inner">
+                                <form id="section3_form" autocomplete="off">
+                                    <input autocomplete="false" name="hidden" type="text" style="display:none;">
+                                    <div class="form-group">
+                                        <input name="input_data_3" id="input_data_3" type="text" class="form-control" placeholder="Cipher to be revealed" autocomplete="off">
+                                    </div>
+                                    <!-- <div class="form-group">
+                                        <input name="email" type="text" class="form-control" placeholder="Email">
+                                    </div> -->
+                                    <br><div class="form-group text-right">
+                                        <input type="submit" class="btn btn-success" value="Decode">
+                                    </div>
+                                    <div class="form-group">
+                                        <p id="message" style="color: black; font-size: 30px; font-weight: bold; text-decoration: underline;"></p>
+                                        <textarea name="message" id="section3_output" class="textarea form-control"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>  
+                    <!-- <p id="message" style="color: white; font-size: 30px;"></p><div id="section3_output"></div>               -->
+                </div>
+            </section>
+
+            <section class="work-section section" id="section-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="item col-md-4">
+                            <div class="tm-work-item-inner">
+                                <div class="icn"><i class="fas fa-2x fa-icons"></i></div>
+                                <h3>.01 Got A Message</h3>
+                                <p>Symphony Cipher is a free stream cipher tool that converts plaintext to ciphertext in the form of musical notes. Please tell your friends about our website. Thank you.</p>
+                            </div>                        
+                        </div>
+                        <div class="item col-md-4 one">
+                            <div class="tm-work-item-inner">
+                                <div class="icn"><i class="fas fa-2x fa-tools"></i></div>
+                                <h3>.02 Encrypt It</h3>
+                                <p>This is a feature that allows a user to enter a text or number and the information is transformed into a ciphertext.</p>
+                            </div>
+                        </div>
+                        <div class="item col-md-4 two">
+                            <div class="tm-work-item-inner">
+                                <div class="icn"><i class="fab fa-2x fa-phoenix-framework"></i></div>
+                                <h3>.03 Decipher it</h3>
+                                <p>Once you receive a message that is hidden pass it through our decipher and get to know what the message is.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <h2>How it Works</h2>
+                    </div>
+                </div>
+                <footer class="footer container container-2">
+                    <div class="row"> 
+                        <p class="col-sm-7">Copyright 2024 Symphony Cipher.</p>
+                        <p class="col-sm-5 text-right design">Design: <a rel="nofollow" href="#" target="_parent">Symphony Cipher</a></p>
+                    </div>
+                </footer>
+            </section>
+        </main>
+    </div>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/jquery.singlePageNav.min.js"></script>
+    <script src="static/js/slick.js"></script>
+    <script src="static/js/parallax.min.js"></script>
+    <script src="static/js/templatemo-script.js"></script>
+    <script>
+
+        // Script for encoding
+        document.getElementById("section2_form").addEventListener("submit", function(event){
+            event.preventDefault();
+            var input_message = document.getElementById("input_data_2").value;
+            fetch('/section2', {
+                method: 'POST',
+                body: new URLSearchParams({
+                    message: input_message
+                }),
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                }
+            })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("cipher").innerHTML = "Cipher:";
+                document.getElementById("section2_output").innerHTML = data;
+            });
+            document.getElementById("input_data_2").value = ''
+        });
+
+        //Script for decoding
+        document.getElementById("section3_form").addEventListener("submit", function(event){
+            event.preventDefault();
+            var input_notes = document.getElementById("input_data_3").value;
+            
+            fetch('/section3', {
+                method: 'POST',
+                body: new URLSearchParams({
+                    notes: input_notes
+                }),
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                }
+            })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("message").innerHTML = "Message:";
+                document.getElementById("section3_output").innerHTML = data;
+            });
+            document.getElementById("input_data_3").value = ''
+        });
+    </script>
+</body>
+</html>
