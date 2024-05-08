@@ -40,7 +40,7 @@ note_mapping = {
 	'F#5' : 'X',
 	'G5' : 'Y',
 	'G#5' : 'Z',
-	'm2' : ' ',
+	'M2' : ' ',
 }
 
 message_mapping = {
@@ -80,7 +80,7 @@ message_mapping = {
 	'X': 'F#5',
 	'Y': 'G5',
 	'Z': 'G#5',
-	' ': 'm2',
+	' ': 'M2',
 }
 
 
@@ -104,24 +104,14 @@ def text_to_notes(text):
 			notes.append()
 	return notes
 
-# def text_to_notes(text):
-# 	notes = []
-# 	for char in text:
-# 		word = char.upper()
-# 		if word in message_mapping:
-# 			notes.append(message_mapping[word])
-# 		else:
-# 			notes.append(word)
-# 	return notes
-
 
 #Decipher Functions
 
 
 # Function to seprate the sequence in the cipher
 def separate_cipher(cipher):
-    separated_array = re.findall(r'[a-zA-Z#]+(?:\d+)?', cipher)
-    return separated_array
+	separated_array = re.findall(r'[a-zA-Z#]+(?:\d+)?', cipher)
+	return separated_array
 
 # Function to Convert the cipher into plaintext
 
@@ -129,6 +119,7 @@ def separate_cipher(cipher):
 def cipher_to_text(secret):
 	sentence = []
 	for sec in secret:
+		sec = sec.upper()
 		if sec in note_mapping:
 			sentence.append(note_mapping[sec])
 		else:
